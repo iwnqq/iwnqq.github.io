@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Iwaneq</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&amp;subset=latin-ext">
+		<link rel="icon" href="favicon.ico">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1>Iwaneq</h1>
+				<p>Chcesz złozyć zamówienie? A może chcesz się ze mną skontaktować?</p>
+				<p>Na tej stronie znajdziesz istotne informacje na ten temat.</p>
+			</div>
+		</header>
+		<nav class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="#o-mnie">O mnie</a></li>
+					<li><a href="#oferta">Oferta</a></li>
+					<li><a href="#kontakt">Kontakt / Social Media</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class="section" id="o-mnie">
+			<div class="container">
+				<h2>O mnie</h2>
+				<p>Nazywam się Mateusz, ale w internecie mówią na mnie Iwaneq. Mam 13 lat i zajmuję się grafiką komputerową.</p>
+				<p>Grafiką interesuję się od kiedy założyłem mój pierwszy kanał na YouTube, czyli od około 4 lat.</p>
+				<p>Moje pierwsze prace graficzne były wykonywane w programie GIMP. Wtedy prace nie były jakieś kosmiczne, bo był to tylko napis na tle. Tak, tylko tyle. Nic więcej.</p>
+				<p>Programami od Adobe zacząłem się interesować w styczniu 2016 roku. Wtedy zobaczyłem program Adobe Photoshop. Zainteresował mnie bardzo, więc szybko zacząłem się uczyć nowych rzeczy w nim. Korzystam z tego programu aż do dziś, ale nadal nie można mnie nazwać profesjonalnym grafikiem. Dlaczego? Ponieważ określenie mnie takim mianem to wręcz grzech. Jestem amatorem i nadal się uczę.</p>
+			</div>
+		</section>
+		<section class="section" id="oferta">
+			<div class="container">
+				<h2>Oferta</h2>
+				<p>Możesz u mnie zamówić:</p>
+				<p>⚫ Awatary</p>
+				<p>⚫ Bannery</p>
+				<p>⚫ Miniaturki</p>
+				<p>⚫ Overlay na stream</p>
+				<p>⚫ Animacje</p>
+				<p>⚫ Inne...</p>
+				<p>Cena zamówienia do ustalenia.</p>
+				<p>Przykładowe prace: <a href="https://imgur.com/a/JSzC2" target="_blank">*klik*</a></p>
+			</div>
+		</section>
+		<section class="section" id="kontakt">
+			<div class="container">
+				<h2>Kontakt / Social Media</h2>
+				<p>
+					<a href="https://www.facebook.com/Iwnqv2" target="_blank"><img src="http://vlepa.pl/ab9c7b.png" alt=""></a>
+					<a href="https://www.instagram.com/iwnq_" target="_blank"><img src="http://vlepa.pl/975cfc.png" alt=""></a>
+					<a href="https://www.youtube.com/channel/UCHLD3Y9dGu47TjXqJs99Y1Q" target="_blank"><img src="http://vlepa.pl/772a6a.png" alt=""></a>
+					<a href=""><img src="http://vlepa.pl/215e0e.png" alt=""></a>
+				</p>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; Iwaneq, 2017.</p>
+			</div>
+		</footer>
+		<script src="jquery.js"></script>
+		<script src="stickyfill.js"></script>
+		<script>
+			$('.nav').Stickyfill();
+
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').stop().animate({
+			          scrollTop: target.offset().top - 70
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+	</body>
+</html>
